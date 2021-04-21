@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Styles Conference</title>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/custom.js"></script>
+    <link rel="stylesheet" href="public/css/main.min.css">
+    <script src="https://kit.fontawesome.com/ba749ec911.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>
+                <a href="index.html">Styles<br> Conference</a>
+            </h1>
+
+            <h3>August 24–26th — Chicago, IL</h3>
+
+            <span class="menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="venue.html">Venue</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sub-header">
+        <h2>Register</h2>
+        <p>Every year we aim to have an unbelievable time, and this year we'd love it for you to join us. Conference
+            passes only cost $99, one of the best values you'll find.</p>
+    </section>
+
+    <section class="register">
+        <div class="register-info">
+            <h2>Purchase a Conference Pass</h2>
+            <h5>$99 per Pass</h5>
+            <p>Purchase your Styles Conference pass using the form to the right. Multiple passes may be purchased within
+                the same order, so feel free to bring a friend or two along. Once your order is finished we’ll follow up
+                and provide a receipt for your purchase. See you soon!</p>
+            <h4>Why Attend?</h4>
+            <ul>
+                <li>Over twenty world-class speakers</li>
+                <li>One full day of workshops and two full days of presentations</li>
+                <li>Hosted at The Chicago Theatre, a historical landmark</li>
+                <li>August in Chicago is simply amazing</li>
+            </ul>
+        </div>
+
+
+        <form class="register-form" action="" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+            <label for="passes">Number of Passes</label><br>
+            <select id="passes" name="quantity" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+            <input class="btn-submit" type="submit" name="submit" value="Purchase">
+        </form>
+
+
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <h6>© Styles Conference</h6>
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="venue.html">Venue</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

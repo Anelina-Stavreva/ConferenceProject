@@ -1,0 +1,120 @@
+.schedule{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-item{
+        margin: 30px 30px 40px 20px;
+
+        @media only screen and (min-width: 768px) {
+            margin: 40px 40px 40px 20px;
+        }
+
+        &-row{
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-column-gap: 15px;
+
+            @media only screen and (min-width: 768px) {
+                grid-template-columns: 20% auto;
+            }
+
+            @media only screen and (min-width: 992px) {
+                grid-template-columns: 16% auto;
+                grid-column-gap: 30px;
+            }
+
+            h2{
+                font-size: 18px;
+                color: #648880;
+                font-weight: 100;
+                text-align: right;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                @media only screen and (min-width: 992px) {
+                    font-size: 24px;
+                }
+            }
+
+            h5{
+                color: #a9b2b9;
+                font-size: 14px;
+                font-weight: 100;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                
+                @media only screen and (min-width: 992px) {
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
+            }
+
+            h5.hour{
+                text-align: right;
+            }
+
+            h5.date{
+                border-bottom: 1px solid #a9b2b9;
+            }
+
+            
+            .speaker-link{
+                
+                @media only screen and (min-width: 768px) {
+                    display: flex;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #888;
+                    font-size: 14px;
+                    font-weight: 100;
+                    padding-bottom: 15px;
+                    padding-top: 15px;
+                    display: block;
+                    border-bottom: 1px solid #a9b2b9;
+                    transition: color .5s;
+                    
+
+                    @media only screen and (min-width: 768px) {
+                        flex: 1;
+                        padding-right: 10px;
+                    }
+
+                    @media only screen and (min-width: 992px) {
+                        font-size: 16px;
+                    }
+    
+                    h4{
+                        color: #648880;
+                        font-size: 16px;
+                        font-weight: 300;
+
+                        @media only screen and (min-width: 992px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                a:hover{
+                    color: #a9b2b9;
+                }
+
+                a.lastrow{
+                    border: none;
+                }
+
+                a.lastrowspecial{
+                    border-bottom: 1px solid #a9b2b9;
+                    
+                    @media only screen and (min-width: 768px) {
+                        border: none;
+                    }
+                }
+            }
+        
+        }
+    }
+}

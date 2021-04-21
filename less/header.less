@@ -1,0 +1,147 @@
+.main-header{
+    background-color: #293f50;
+}
+
+.container{
+        background-color: #293f50;
+        position: relative;
+        height: 150px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-areas: 
+            'logo date'
+            'logo menu';
+            align-content: center;
+        }
+
+        @media only screen and (min-width: 992px) {
+            padding-top: 20px;
+        }
+
+
+        h1{
+            text-align: right;
+            font-size: 28px;
+            padding: 20px;
+            cursor: pointer;
+            line-height: 1;
+
+            @media only screen and (min-width: 768px) {
+                grid-area: logo;
+                text-align: left;
+                font-size: 40px;
+                padding-left: 30px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                font-size: 48px;
+                
+            }
+
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                color: white;
+                font-weight: 100;
+                transition: color 1s;
+            }
+
+            a:hover{
+                color: #648880;
+            }
+        }
+
+        h3{
+            color: #648880;
+            font-size: 16px;
+            text-align: right;
+            font-weight: 100;
+            padding: 5px 20px 10px 0;
+
+            @media only screen and (min-width: 768px) {
+                grid-area: date;
+                font-size: 18px;
+                padding: 30px 30px 0px 0;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+
+            @media only screen and (min-width: 992px) {
+                font-size: 21px;
+            }
+        }
+
+        .menu{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            i{
+                color: white;
+                font-size: larger;
+                cursor: pointer;
+                transition: color 1s;
+            }
+
+            i:hover{
+                color: #648880;
+            }
+
+            @media only screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        .main-nav{
+            display: none;
+
+            @media only screen and (min-width: 768px) {
+                grid-area: menu;
+                margin-right: 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                display: block;
+                font-size: 14px;
+                font-weight: 100;
+                line-height: 1.5;
+                transition: color 1s;
+
+                @media only screen and (min-width: 768px) {
+                    margin: 10px;
+                }
+            }
+
+            a:hover {
+                color: #648880;
+                }
+            
+       
+        }
+
+        .nav-open{
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 45px;
+            animation-name: menu1;
+            animation-duration: .7s;
+            animation-timing-function: linear;            
+        }
+}
+
+@keyframes menu1 {
+    0% {left:-100px;}
+    100% {left:0px;}
+}
